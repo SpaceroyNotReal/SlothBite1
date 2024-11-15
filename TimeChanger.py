@@ -1,3 +1,4 @@
+# Make sure to read README before testing the code!
 def convert_to_24_hour(time_str):
     components = time_str.split()
     time = components[0].split(":")
@@ -25,7 +26,7 @@ def convert_to_12_hour(time_str):
 
     return f"{hours}:{minutes} {am_pm}"
 
-        # Example usage:
+        
 time_str = input("Enter a time in AM/PM format: ").lower()
 if "am" or "pm" in time_str:
     converted_time = convert_to_12_hour(time_str)
